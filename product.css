@@ -1,0 +1,120 @@
+#productPage .product {
+  display: none;
+}
+#productPage .product:target {
+  display: grid;
+}
+#productPage .product {
+  grid-template-columns: 1.2fr 1fr 320px;
+  gap: 40px;
+  align-items: start;
+}
+.breadcrumb {
+  grid-column: 1 / -1;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+.productImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: #eee;
+}
+.productInfo h2 {
+  font-size: 44px;
+  margin-bottom: 20px;
+}
+.productInfo .label {
+  font-weight: 700;
+  margin-top: 12px;
+}
+.productInfo p {
+  margin: 6px 0;
+  color: #222;
+}
+.brandTitle {
+  font-size: 32px;
+  margin-top: 30px;
+}
+.brandText {
+  color: #444;
+}
+.buyBox {
+  background: #d9d9d9;
+  padding: 24px;
+}
+.bigTitle {
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1.05;
+  margin-bottom: 14px;
+}
+.meta {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+.buyBox label {
+  display: block;
+  font-size: 14px;
+  margin: 10px 0 6px;
+}
+.buyBox select {
+  width: 100%;
+  padding: 10px;
+  border: 0;
+}
+.buyBox button {
+  width: 100%;
+  margin-top: 14px;
+  padding: 12px 14px;
+  border: 0;
+  background: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+.soldOut figure {
+  position: relative;
+}
+.soldoutBadge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #8f8f8f;
+  color: #fff;
+  padding: 8px 12px;
+  font-size: 13px;
+}
+.soldOut .productImage {
+  opacity: 0.6;
+}
+.priceBox {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 10px 0 14px;
+}
+
+.prevPrice {
+  text-decoration: line-through;
+  color: #777;
+  font-size: 14px;
+}
+.nowPrice {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.discountBadge {
+  margin-left: auto;
+  background: #d8483a;
+  color: #fff;
+  padding: 6px 10px;
+  font-size: 13px;
+}
+.soldOut select,
+.soldOut button {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
