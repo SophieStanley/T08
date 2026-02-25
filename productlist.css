@@ -1,0 +1,79 @@
+main > h2 {
+  font-size: 48px;
+  margin: 20px 0 30px;
+}
+main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  align-items: start;
+}
+main > h2 {
+  grid-column: 1 / -1;
+}
+.smallProduct {
+  position: relative;
+  text-decoration: none;
+}
+.smallProduct img {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: #eee;
+}
+.soldoutTxt {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #8f8f8f;
+  color: #fff;
+  padding: 8px 12px;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+}
+.soldOut {
+  opacity: 0.45;
+}
+.smallProduct h3 {
+  margin: 10px 0 6px;
+  font-size: 16px;
+  line-height: 1.25;
+}
+.subtle {
+  color: #888;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+.price {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.discounted_element {
+  display: none;
+  gap: 10px;
+  align-items: center;
+  margin: 8px 0 10px;
+}
+.discounted .discounted_element {
+  display: flex;
+}
+.discounted_element p:first-child {
+  font-size: 14px;
+}
+.discounted_element p:last-child {
+  margin-left: auto;
+  background: #d8483a;
+  color: #fff;
+  padding: 8px 10px;
+  font-size: 13px;
+}
+.smallProduct a {
+  display: inline-block;
+  margin-top: 6px;
+  color: #111;
+  text-decoration: underline;
+  font-size: 14px;
+}
+.color_me_red {
+  color: #d8483a;
+}
